@@ -6,7 +6,7 @@ const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const CreateFile = require('./src/create-file');
 
-var groupMembers = [];  // Will be an array of employee
+var groupMembers = [];
 
 var baseQuestions = [
     {
@@ -136,8 +136,6 @@ function promptForEmployee() {
                         console.log('Intern: ' + groupMembers[i].name + " role: " + groupMembers[i].getRole());
                       }
                   }
-                //groupMembers has your data
-                // Call your page creation function
                 var fileCreator = new CreateFile(groupMembers);
                 fileCreator.CreateHTMLPage('Called From', 'Index.js');
               }
