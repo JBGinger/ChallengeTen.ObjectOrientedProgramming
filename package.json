@@ -1,6 +1,29 @@
 {
+  "name": "ChallengeTen.ObjectOrientedProgramming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBGinger/ChallengeTen.ObjectOrientedProgramming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JBGinger/ChallengeTen.ObjectOrientedProgramming/issues"
+  },
+  "homepage": "https://github.com/JBGinger/ChallengeTen.ObjectOrientedProgramming#readme",
   "dependencies": {
-    "inquirer": "^8.2.0",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
     "jest": "^27.3.1"
   }
 }

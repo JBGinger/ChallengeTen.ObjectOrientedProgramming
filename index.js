@@ -12,7 +12,7 @@ var baseQuestions = [
     {
       type: 'input',
       name: 'name',
-      message: "What's your name? ",
+      message: 'Please enter employee name.',
       validate: value => {
         if (value) {
             return true;
@@ -25,7 +25,7 @@ var baseQuestions = [
     {
       type: 'input',
       name: 'id',
-      message: "What's your employee ID? ",
+      message: 'Please enter employee ID.',
       validate: value => {
         if (value) {
             return true;
@@ -38,7 +38,7 @@ var baseQuestions = [
     {
       type: 'input',
       name: 'email',
-      message: "What's your employee email? ",
+      message: 'Please enter employee email.',
       validate: value => {
         if (value) {
             return true;
@@ -54,7 +54,7 @@ var managerQuestions = [...baseQuestions];
 managerQuestions.push({
         type: 'input',
         name: 'officeNumber', 
-        message: 'Please enter your office number',
+        message: 'Please enter employee office number.',
         validate: value => {
           if (value) {
               return true;
@@ -69,7 +69,7 @@ var engineerQuestions = [...baseQuestions];
 engineerQuestions.push({
     type: 'input',
     name: 'github', 
-    message: 'Please enter your GitHub Repository',
+    message: 'Please enter employee GitHub Repository.',
     validate: value => {
       if (value) {
           return true;
@@ -84,7 +84,7 @@ var internQuestions = [...baseQuestions];
 internQuestions.push({
     type: 'input',
     name: 'school', 
-    message: 'Please enter your school: ',
+    message: 'Please enter employee school.',
     validate: value => {
       if (value) {
           return true;
@@ -151,7 +151,6 @@ function promptForEngineer () {
         groupMembers.push(new Engineer(answers.name, answers.id, answers.email, answers.github));
         promptForEmployee();
     });
-    
 }
 
 function promptForIntern() {
@@ -161,5 +160,4 @@ function promptForIntern() {
         groupMembers.push(new Intern(answers.name, answers.id, answers.email, answers.school));
         promptForEmployee();
     });
-    
 }

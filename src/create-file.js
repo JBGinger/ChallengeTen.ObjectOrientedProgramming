@@ -37,7 +37,7 @@ class CreateFile {
                         detail = `<p class="card-text">Office Number: ${officeNumber}</p></div></div></div>`;
                         icon += 'fa-coffee';
                     } 
-                    else if (role == "Engineer") {
+                    else if (role == 'Engineer') {
                         detail = `<p class="card-text">GitHub: <a target="_blank" href="${github}">${github}</a></p></div></div></div>`;
                         icon += 'fa-glasses';
                     }
